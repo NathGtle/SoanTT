@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto&display=swap');
+
+p{
+  font-size: 14px;
+  color: #02130E;
+  font-family: 'Roboto', sans-serif;
+  margin: 7px 0 7px 0;
+}
+.body{
+  background-color: white;
+  width: 600px;
+  padding: 50px 50px;
+  border-radius: 10px;
+  box-shadow: 0px 1px 3px #4444441A;
+  margin: 100px auto 30px auto;
+}
+.content{
+  width: 600px;
+  height: auto;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+}
+.container{
+  margin: 30px 0 30px 0;
+}
+.invoice{
+  width: 170px;
+}
+.payments{
+  width: 200px;
+}
+.amount{
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+}
+.input{
+  display: flex;
+  align-items: center;
+}
+.checkbox{
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+.amount > p{
+  margin: auto 0 auto 0;
+  text-align: right;
+}
+.amounts > p{
+  text-align: right;
+}
+.invoiceNumber{
+  font-weight: bold;
+  opacity: 0.8;
+}
+.invoiceDays{
+  font-style: italic;
+  font-size: 12px;
+  color: #ABB0AF;
+}
+.paymentsFormule{
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+.paymentsFormule > svg{
+  color:#10BC91;
+}
+.paymentsFormuleInfo{
+  font-style: italic;
+  font-size: 12px;
+  color: #10BC91;
+}
+.amountOldPrice{
+  font-weight: bold;
+  font-size: 12px;
+  text-decoration: line-through;
+}
+.amountNewPrice{
+  font-weight: bold;
+}
+.pay{
+  width: 198px;
+  height: 42px;
+  margin-top: 100px;
+  background: #10BC91;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  cursor: pointer;
+}
+.payAmount{
+  color: white;
+  font-size: 16px;
+}
