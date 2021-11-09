@@ -31,7 +31,6 @@ function InvoiceNotPayed({data, checkedState,setCheckedState}: {data : Invoice[]
 
     setTotal(totalPrice);
   };
-
   return (
     <div>
       <Modal show={show} close={Toggle} total={total}/>
