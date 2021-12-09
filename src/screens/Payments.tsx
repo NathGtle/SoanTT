@@ -17,10 +17,10 @@ function Payments() {
     WebService.getInvoices().then((invoices) => {
       invoices.map((invoice: Invoice) =>{
         if(invoice.discount !== null){
-          const newPrice = parseInt(invoice.amount) - (parseInt(invoice.amount) * invoice.discount.rate / 100)
+          const newPrice = parseInt(invoice.amount, 10) - (parseInt(invoice.amount, 10) * invoice.discount.rate / 100)
           invoice.newPrice = newPrice 
         }else(
-          invoice.newPrice = parseInt(invoice.amount)
+          invoice.newPrice = parseInt(invoice.amount, 10)
         );
         const maxDate = new Date(invoice.sentDate);
         maxDate.setDate(maxDate.getDate() + 30); 
