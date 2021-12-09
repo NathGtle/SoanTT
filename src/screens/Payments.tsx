@@ -23,7 +23,7 @@ function Payments() {
           invoice.newPrice = parseInt(invoice.amount, 10)
         );
         const maxDate = new Date(invoice.sentDate);
-        maxDate.setDate(maxDate.getDate() + 30); 
+        maxDate.setDate(maxDate.getDate() + invoice.maxDaysToPay); 
         invoice.maxDate = moment(maxDate).format('DD/MM/YYYY');
         if(invoice.payedDate !== null){
           invoice.payedDate = moment(invoice.payedDate).format('DD/MM/YYYY')
